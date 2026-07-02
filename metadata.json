@@ -1,0 +1,6 @@
+{
+  "name": "Sistema Comercial Red Líder",
+  "description": "CRM comercial multi-embudo basado en Ingresos Predecibles para Red Líder, El Zapotal y Software, con automatización de seguimientos e integración con WhatsApp Cloud API, Messenger e Instagram de Meta.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

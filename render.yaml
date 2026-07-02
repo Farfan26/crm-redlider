@@ -1,0 +1,22 @@
+# Configuración de Despliegue Automático para Render.com (Blueprint)
+# Sistema Comercial Red Líder - Full Stack Node.js Express & Vite React
+
+services:
+  - type: web
+    name: crm-red-lider
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: "3000"
+      - key: NODE_ENV
+        value: production
+      - key: META_VERIFY_TOKEN
+        value: red_lider_webhook_secret_2026
+      # Opcional: Agrega aquí tus claves reales de WhatsApp Cloud API cuando estés en producción
+      # - key: META_ACCESS_TOKEN
+      #   sync: false
+      # - key: META_PHONE_NUMBER_ID
+      #   sync: false
